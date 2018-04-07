@@ -1,0 +1,59 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Search Flight</title>
+</head>
+<body> 
+<form action="RegisterServlet" method="post">
+     <table border = "1" align="center">
+        <tr>
+               <td align ="center" valign="bottom" bgcolor="#000080">
+               <font size="4" color="#FFFFFF"><b>Airline Ticket Reservation</b></font>
+               </td>
+          </tr>
+          <tr>
+               <td>
+               <img src="image/airline.png" alt="Airline" width=100% height=100%>
+               </td>
+          </tr>        
+          <tr>
+               <td>
+               <b>Airport</b> <br/>
+               From <SELECT NAME="fromAirport">
+                    <OPTION VALUE="NRT">Narita, Tokyo
+                    <OPTION VALUE="LAX">Los Angeles, California
+                    <OPTION VALUE="BAN">Bangalore 
+                    <OPTION VALUE="MUM">Mumbai
+                    <OPTION VALUE="CHE">Chennai
+               </SELECT>
+
+               &nbsp;To <SELECT NAME="toAirport">
+                    <OPTION VALUE="LAX">Los Angeles, California
+                    <OPTION VALUE="NRT">Narita, Tokyo
+                    <OPTION VALUE="HYD">Hyderabad
+                    <OPTION VALUE="NYK">New York
+                    <OPTION VALUE="PHI">Phillipines    
+               </SELECT>
+               </td>
+          </tr>         
+          <tr>
+               <td align="left">    
+               <b>Date</b>[yyyy-mm-dd]<br/>
+               Depart <input type="text" name="fromYear" size="4">-<input type="text" name="fromMonth" size="2">-<input type="text" name="fromDay" size="2">
+               Return*   <input type="text" name="toYear" size="4"  >-<input type="text" name="toMonth"  size="2" >-<input type="text" name="toDay" size="2">
+               <br/>
+               <font size="2" color="#808080">*For one-way flight keep "Return" date blank</font>
+               </td>
+          </tr>
+         
+          <tr>
+               <td align="right">
+               <input type="submit" value="Search">
+               </td>
+          </tr>
+     </table>    
+</form>
+
+</body>
+</html>
